@@ -1,0 +1,33 @@
+﻿@model BanXeHoi.Models.Loai
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Xóa loại xe</h2>
+
+<h3>Bạn có muốn xóa loại xe?</h3>
+<div>
+    <h4>Loại xe</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tenloai)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tenloai)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index", "LoaiXe")
+        </div>
+    }
+</div>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dbBanXe">
+  <DataContextMoniker Name="/dbBanXeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c90fc888-5c9e-479e-968e-fd2ba88db71a" absoluteBounds="3.5, 5.125, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/dbBanXeDataContext/DonHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa565438-4aa8-4be4-b5a0-0ed75ea192a6" absoluteBounds="3.515, 5.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b22f9ea3-e47d-4d07-822d-d083be6614bb" absoluteBounds="6.25, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbBanXeDataContext/ChiTietDonHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fb0529c2-3743-497b-a757-cafe59949806" absoluteBounds="6.265, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5deb8b0-ba83-4fa6-8884-03eb1248efce" absoluteBounds="0.75, 5, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/dbBanXeDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bdc201c0-5a50-4da9-991e-79200622cb81" absoluteBounds="0.765, 5.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ad7eaf11-fea4-4e52-97d9-f8a29d37cb4c" absoluteBounds="0.75, 1.5, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dbBanXeDataContext/Loai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="232f4b5b-9ee4-4410-9d18-c48bce70ee42" absoluteBounds="0.765, 1.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3086821e-0ef1-4143-904f-b03a441727d3" absoluteBounds="3.5, 1, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/dbBanXeDataContext/XeHoi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d69de1be-2ba3-4e32-a8bf-29adf2eaaa6e" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 6.10659912109375); (7.25 : 6.10659912109375); (7.25 : 2.95359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbBanXeDataContext/DonHang/DonHang_ChiTietDonHang" />
+      <nodes>
+        <classShapeMoniker Id="c90fc888-5c9e-479e-968e-fd2ba88db71a" />
+        <classShapeMoniker Id="b22f9ea3-e47d-4d07-822d-d083be6614bb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.10659912109375); (3.5 : 6.10659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbBanXeDataContext/KhachHang/KhachHang_DonHang" />
+      <nodes>
+        <classShapeMoniker Id="e5deb8b0-ba83-4fa6-8884-03eb1248efce" />
+        <classShapeMoniker Id="c90fc888-5c9e-479e-968e-fd2ba88db71a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.16429768880208); (6.25 : 2.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbBanXeDataContext/XeHoi/XeHoi_ChiTietDonHang" />
+      <nodes>
+        <classShapeMoniker Id="3086821e-0ef1-4143-904f-b03a441727d3" />
+        <classShapeMoniker Id="b22f9ea3-e47d-4d07-822d-d083be6614bb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.09699625651042); (3.5 : 2.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbBanXeDataContext/Loai/Loai_XeHoi" />
+      <nodes>
+        <classShapeMoniker Id="ad7eaf11-fea4-4e52-97d9-f8a29d37cb4c" />
+        <classShapeMoniker Id="3086821e-0ef1-4143-904f-b03a441727d3" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

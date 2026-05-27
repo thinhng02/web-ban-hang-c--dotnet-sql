@@ -1,0 +1,26 @@
+﻿@model BanXeHoi.Models.XeHoi
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Thông tin chi tiết xe</h2>
+
+<h2>@Html.DisplayFor(model => model.tenxe)</h2>
+<div class="col-sm-12 col=md-12">
+    <div class="thumnail">
+        <img src="@Html.DisplayFor(model=>model.hinh)" alt="thumnail" width="300" height="200" />
+    </div>
+    <div class="caption">
+        <p> Mã loại: @Html.DisplayFor(model => model.maloai) </p>
+        <p> Giá: @Html.DisplayFor(model => model.giaban) </p>
+        <p> Ngày cập nhật: @Html.DisplayFor(model => model.ngaycapnhat) </p>
+        <p> Số lượng: @Html.DisplayFor(model => model.soluongton) </p>
+        <p>
+            <a href="#" class="btn btn-primary" role="button">Buy</a>
+            @Html.ActionLink("Back", "Index", "XeHoi", new { @class = "btn btn-info" })
+        </p>
+    </div>
+</div>
+
